@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Match Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Game Match Analysis</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Predictions</a>
+            <a href="#" onclick="openPremiumModal()">Premium</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Bookmaker Ads</h2>
+            <div class="ad">Bet365: Sign up now for a 100% bonus!</div>
+            <div class="ad">Betway: Win up to KES 1,000,000 in jackpots!</div>
+            <div class="ad">SportPesa: Best odds on football matches today!</div>
+        </aside>
+
+        <main>
+            <input type="text" id="searchBar" placeholder="Search matches, teams, or leagues..." onkeyup="filterMatches()">
+            
+            <div id="matches">
+                <!-- Matches will be inserted here by JavaScript -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Match Analysis Modal -->
+    <div id="analysisModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="matchDetails"></div>
+        </div>
+    </div>
+
+    <!-- Premium Modal -->
+    <div id="premiumModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePremiumModal()">&times;</span>
+            <h2>Upgrade to Premium</h2>
+            <p>Get exclusive betting insights for just $10/month!</p>
+            <button onclick="alert('Subscribed!')">Subscribe Now</button>
+        </div>
+    </div>
+
+    <footer>© 2025 Game Match Analysis. All Rights Reserved.</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
